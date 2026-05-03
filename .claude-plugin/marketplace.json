@@ -1,13 +1,18 @@
 {
-  "$schema": "https://claude.ai/schemas/marketplace-v1.json",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "dutch-data-marketplace",
-  "owner": { "name": "stromy-org" },
+  "description": "Plugin marketplace for Dutch Data Claude Code plugins",
+  "owner": {
+    "name": "stromy-org"
+  },
   "plugins": [
     {
-      "name": "dutch-data",
-      "description": "Combines Dutch government open data (Tweede Kamer, Rijksoverheid, BWB legislation, ROO organizations) with branded document output (PDF, DOCX, PPTX, PPTX-HD, Mermaid diagrams). Branded with Rijkshuisstijl.",
+      "name": "dutch-data-plugin",
+      "description": "Claude Code plugin for Dutch Data branded deliverables",
       "version": "0.1.0",
-      "author": "stromy-org",
+      "author": {
+        "name": "Corentin Merle"
+      },
       "source": {
         "source": "url",
         "url": "https://github.com/stromy-org/dutch-data-plugin.git"
