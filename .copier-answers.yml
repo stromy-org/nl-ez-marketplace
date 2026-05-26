@@ -2,10 +2,10 @@
 _commit: 37056c3
 _src_path: ../claude-marketplace-template
 author_name: Corentin Merle
-client_name: Dutch Data
-client_slug: dutch-data
+client_name: NL Gov Data
+client_slug: nl-ez
 github_org: stromy-org
-marketplace_name: Dutch Data Marketplace
-marketplace_slug: dutch-data-marketplace
-plugin_description: Claude Code plugin for Dutch Data branded deliverables
-plugin_slug: dutch-data-plugin
+marketplace_name: NL Gov Data Marketplace
+marketplace_slug: nl-gov-data-marketplace
+plugin_description: Claude Code plugin for NL Gov Data branded deliverables
+plugin_slug: nl-gov-data-plugin

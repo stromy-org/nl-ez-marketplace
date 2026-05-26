@@ -1,21 +1,21 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
-  "name": "dutch-data-marketplace",
-  "description": "Plugin marketplace for Dutch Data Claude Code plugins",
+  "name": "nl-gov-data-marketplace",
+  "description": "Plugin marketplace for NL Gov Data Claude Code plugins",
   "owner": {
     "name": "stromy-org"
   },
   "plugins": [
     {
-      "name": "dutch-data-plugin",
-      "description": "Claude Code plugin for Dutch Data branded deliverables",
+      "name": "nl-gov-data-plugin",
+      "description": "Claude Code plugin for NL Gov Data branded deliverables",
       "version": "0.1.0",
       "author": {
         "name": "stromy-org"
       },
       "source": {
         "source": "github",
-        "repo": "stromy-org/dutch-data-plugin"
+        "repo": "stromy-org/nl-gov-data-plugin"
       }
     }
   ]
