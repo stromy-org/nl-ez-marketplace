@@ -1,21 +1,21 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
-  "name": "nl-gov-data-marketplace",
-  "description": "Plugin marketplace for NL Gov Data Claude Code plugins",
+  "name": "nl-ez-marketplace",
+  "description": "Plugin marketplace for the nl-ez (Ministerie van Economische Zaken en Klimaat) Claude Code plugin",
   "owner": {
     "name": "stromy-org"
   },
   "plugins": [
     {
-      "name": "nl-gov-data-plugin",
-      "description": "Claude Code plugin exposing Dutch government data intelligence skills via the nl-gov-data MCP — intel tooling only, no document formatting",
-      "version": "0.3.0",
+      "name": "nl-ez-plugin",
+      "description": "Branded plugin for Ministerie van Economische Zaken en Klimaat — Dutch government data intelligence (nl-gov-data) with server-side branded formatting (stromy-format) and deliverable planning (deliverable-canvas) over the nl-ez brand overlay",
+      "version": "0.4.0",
       "author": {
         "name": "stromy-org"
       },
       "source": {
         "source": "github",
-        "repo": "stromy-org/nl-gov-data-plugin"
+        "repo": "stromy-org/nl-ez-plugin"
       }
     }
   ]
