@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "nl-ez-marketplace",
   "description": "Plugin marketplace for the nl-ez (Ministerie van Economische Zaken en Klimaat) Claude Code plugin",
   "owner": {
@@ -14,8 +14,8 @@
         "name": "stromy-org"
       },
       "source": {
-        "source": "github",
-        "repo": "stromy-org/nl-ez-plugin"
+        "source": "url",
+        "url": "https://github.com/stromy-org/nl-ez-plugin.git"
       }
     }
   ]
