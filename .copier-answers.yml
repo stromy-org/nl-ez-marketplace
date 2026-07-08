@@ -1,6 +1,6 @@
 # Changes here will be overwritten by Copier; DO NOT edit manually.
 _commit: 37056c3
-_src_path: ../claude-marketplace-template
+_src_path: gh:stromy-org/claude-marketplace-template
 author_name: Corentin Merle
 client_name: NL Gov Data
 client_slug: nl-ez
