@@ -59,8 +59,8 @@ claude plugin update nl-gov-data-plugin@nl-gov-data-marketplace
 
 | Problem | Fix |
 |---------|-----|
-| "Failed to install plugin" with `Permission denied (publickey)` | Refresh the marketplace and confirm the plugin source is the explicit HTTPS `.git` URL |
-| Other installation errors | Check `~/Library/Logs/Claude/main.log`; then try CLI install (Option B) |
+| "Failed to install plugin" with `Permission denied (publickey)` | Confirm the plugin entry uses an explicit `https://...git` URL, not the `github` shorthand |
+| Other "Failed to install plugin" errors | Check `~/Library/Logs/Claude/main.log`; then try CLI install (Option B) |
 | Skills don't appear | Start a new session; ensure you're in the **Code** tab |
 | Dependency errors on first use | Run `npm install && uv sync` in the plugin cache dir |
 | "Plugin not found in marketplace" | Run `claude plugin marketplace add stromy-org/nl-gov-data-marketplace` first |
@@ -69,4 +69,5 @@ claude plugin update nl-gov-data-plugin@nl-gov-data-marketplace
 
 - **Marketplace** (this repo): public — hosts `marketplace.json` only
 - **Plugin** (`nl-gov-data-plugin`): public — contains skills, brand data, company info
-- **Source format**: `marketplace.json` uses `"source": "url"` with an explicit HTTPS clone URL ending in `.git`; the `github` shorthand is avoided because Claude Code can resolve it to SSH
+- **Source format**: use `"source": "url"` with an explicit HTTPS clone URL ending in `.git`, for example `https://github.com/stromy-org/nl-gov-data-plugin.git`
+- **Why not `github` shorthand?** Anthropic supports it, but Claude Code can resolve it to SSH (`git@github.com:...`) and fail on machines without a configured GitHub SSH key. Explicit HTTPS is the org portability standard.
