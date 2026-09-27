@@ -1,0 +1,19 @@
+{
+  "name": "nl-ez-marketplace",
+  "interface": {
+    "displayName": "Ministerie van Economische Zaken"
+  },
+  "plugins": [
+    {
+      "name": "nl-ez-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/stromy-org/nl-ez-plugin.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    }
+  ]
+}
